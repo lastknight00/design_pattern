@@ -1,8 +1,14 @@
 package vo;
 
+import template_method.device.Device;
+
 public class Phone extends Device {	
 	public Phone(String model, String serial) {
 		super(model, serial);
+	}
+
+	public Phone(String model, String serial, String alias) {
+		super(model, serial, alias);
 	}
 
 	@Override
