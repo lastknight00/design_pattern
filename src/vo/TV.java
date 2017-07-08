@@ -1,7 +1,8 @@
-package iterator.vo;
+package vo;
 
-public class Phone extends Device {	
-	public Phone(String model, String serial) {
+public class TV extends Device {
+
+	public TV(String model, String serial) {
 		super(model, serial);
 	}
 
@@ -21,7 +22,7 @@ public class Phone extends Device {
 	}
 
 	@Override
-	public void setAlias(final String alias) {
+	public void setAlias(String alias) {
 		this.alias = alias;
 	}
 
@@ -35,9 +36,9 @@ public class Phone extends Device {
 			return true;
 		}
 	}
-
+	
 	private void powerOnProcess() {
-		System.out.printf("%s(%s) phone power on", alias, model);
+		System.out.printf("%s(%s) TV power on", alias, model);
 	}
 
 	@Override
@@ -52,8 +53,8 @@ public class Phone extends Device {
 	}
 
 	private void powerOffProcess() {
-		System.out.printf("%s(%s) phone power off", alias, model);
-		
+		System.out.printf("%s(%s) TV power off", alias, model);
 	}
+
 
 }

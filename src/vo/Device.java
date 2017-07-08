@@ -1,4 +1,4 @@
-package iterator.vo;
+package vo;
 
 @SuppressWarnings("unused")
 public abstract class Device {

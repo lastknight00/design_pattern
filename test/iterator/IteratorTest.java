@@ -1,14 +1,14 @@
 package iterator;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 import java.util.Arrays;
 
 import org.junit.Test;
 
 import iterator.list.MyList;
-import iterator.vo.Device;
-import iterator.vo.Phone;
+import vo.Device;
+import vo.Phone;
 
 public class IteratorTest {
 	@Test
@@ -19,7 +19,11 @@ public class IteratorTest {
 		Iterator<Device> iter = list.iterator();
 		int index = 0;
 		while(iter.hasNext()) {
-			assertEquals(iter.next().getModel(), list.get(index).getModel());
+			Device device = iter.next();
+			assertEquals(device.getModel(), list.get(index).getModel());
+			assertTrue(device.powerOn());
+			assertTrue(device.powerOff());
+			assertFalse(device.powerOff());
 			index++;
 		}
 	}
