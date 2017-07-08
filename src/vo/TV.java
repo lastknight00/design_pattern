@@ -1,9 +1,15 @@
 package vo;
 
+import template_method.device.Device;
+
 public class TV extends Device {
 
 	public TV(String model, String serial) {
 		super(model, serial);
+	}
+
+	public TV(String model, String serial, String alias) {
+		super(model, serial, alias);
 	}
 
 	@Override

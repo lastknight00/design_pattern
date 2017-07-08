@@ -1,4 +1,4 @@
-package vo;
+package template_method.device;
 
 @SuppressWarnings("unused")
 public abstract class Device {
@@ -9,8 +9,13 @@ public abstract class Device {
 	
 	
 	public Device(String model, String serial) {
+		this(model, serial, model);
+	}
+	
+	public Device(String model, String serial, String alias) {
 		this.model = model;
 		this.serial = serial;
+		this.alias = alias;
 		this.power = false;
 	}
 	public abstract String getModel();

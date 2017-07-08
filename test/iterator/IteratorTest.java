@@ -7,7 +7,7 @@ import java.util.Arrays;
 import org.junit.Test;
 
 import iterator.list.MyList;
-import vo.Device;
+import template_method.device.Device;
 import vo.Phone;
 import vo.TV;
 
