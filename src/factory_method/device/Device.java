@@ -5,7 +5,7 @@ public abstract class Device {
 	final protected String model;
 	final protected String serial;
 	protected String alias;
-	protected boolean power;
+	protected boolean powerOn;
 	
 	
 	public Device(String model, String serial) {
@@ -16,12 +16,29 @@ public abstract class Device {
 		this.model = model;
 		this.serial = serial;
 		this.alias = alias;
-		this.power = false;
+		this.powerOn = false;
 	}
-	public abstract String getModel();
-	public abstract String getSerial();
-	public abstract String getAlias();
-	public abstract void setAlias(final String alias);
+	
+	public String getAlias() {
+		return alias;
+	}
+
+	public void setAlias(String alias) {
+		this.alias = alias;
+	}
+
+	public String getModel() {
+		return model;
+	}
+
+	public String getSerial() {
+		return serial;
+	}
+
 	public abstract boolean powerOn();
 	public abstract boolean powerOff();
+
+	public boolean isPowerOn() {
+		return powerOn;
+	}
 }

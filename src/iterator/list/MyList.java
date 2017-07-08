@@ -13,12 +13,14 @@ public class MyList<T> implements Iterable<T> {
 		list = new ArrayList<T>();
 	}
 	
-	public void add(final T obj) {
+	public MyList<T> add(final T obj) {
 		list.add(obj);
+		return this;
 	}
 	
-	public void addAll(final List<T> list) {
+	public MyList<T> addAll(final List<T> list) {
 		this.list.addAll(list);
+		return this;
 	}
 	
 	public T get(final int index) {

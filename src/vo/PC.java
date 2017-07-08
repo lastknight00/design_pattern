@@ -2,13 +2,20 @@ package vo;
 
 import template_method.SafePowerOffDevice;
 
-public class Phone extends SafePowerOffDevice{	
-	public Phone(String model, String serial) {
+public class PC extends SafePowerOffDevice {
+
+	public PC(String model, String serial) {
 		super(model, serial);
 	}
-
-	public Phone(String model, String serial, String alias) {
+	
+	public PC(String model, String serial, String alias) {
 		super(model, serial, alias);
+	}
+
+
+	@Override
+	public void setAlias(final String alias) {
+		this.alias = alias;
 	}
 
 	@Override
@@ -43,6 +50,7 @@ public class Phone extends SafePowerOffDevice{
 
 	@Override
 	protected void preprocessPowerOff() {
-		System.out.println("통화를 종료합니다.");
+		System.out.println("실행중인 프로그램을 종료합니다.");
 	}
+
 }

@@ -11,7 +11,7 @@ import factory_method.device.TVFactory;
 import factory_method.framework.Factory;
 import iterator.Iterator;
 
-public class TemplateMethodTest {
+public class FactoryMethodTest {
 	final static String TV_MODEL = "TV_MODEL";
 	final static String PHONE_MODEL = "PHONE_MODEL";
 	@Test

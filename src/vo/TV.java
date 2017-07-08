@@ -13,31 +13,11 @@ public class TV extends Device {
 	}
 
 	@Override
-	public String getModel() {
-		return model;
-	}
-
-	@Override
-	public String getSerial() {
-		return serial;
-	}
-
-	@Override
-	public String getAlias() {
-		return alias;
-	}
-
-	@Override
-	public void setAlias(String alias) {
-		this.alias = alias;
-	}
-
-	@Override
 	public boolean powerOn() {
-		if(power) {
+		if(powerOn) {
 			return false;
 		} else {
-			power = true;
+			powerOn = true;
 			powerOnProcess();
 			return true;
 		}
@@ -49,10 +29,10 @@ public class TV extends Device {
 
 	@Override
 	public boolean powerOff() {
-		if(!power) {
+		if(!powerOn) {
 			return false;
 		} else {
-			power = false;
+			powerOn = false;
 			powerOffProcess();
 			return true;
 		}
