@@ -1,6 +1,6 @@
-package template_method.framework;
+package factory_method.framework;
 
-import template_method.device.Device;
+import factory_method.device.Device;
 
 public abstract class Factory {
 	public final Device create(String model, String serial, String room) {

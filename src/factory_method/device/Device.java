@@ -1,4 +1,4 @@
-package template_method.device;
+package factory_method.device;
 
 @SuppressWarnings("unused")
 public abstract class Device {

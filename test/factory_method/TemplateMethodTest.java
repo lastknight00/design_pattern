@@ -1,15 +1,15 @@
-package template_method;
+package factory_method;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
 import area.House;
+import factory_method.device.Device;
+import factory_method.device.PhoneFactory;
+import factory_method.device.TVFactory;
+import factory_method.framework.Factory;
 import iterator.Iterator;
-import template_method.device.Device;
-import template_method.device.PhoneFactory;
-import template_method.device.TVFactory;
-import template_method.framework.Factory;
 
 public class TemplateMethodTest {
 	final static String TV_MODEL = "TV_MODEL";

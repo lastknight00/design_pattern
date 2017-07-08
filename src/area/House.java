@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import iterator.list.MyList;
-import template_method.device.Device;
+import factory_method.device.Device;
 
 public class House {
 	public static Map<String, Room> rooms;

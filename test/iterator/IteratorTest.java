@@ -6,8 +6,8 @@ import java.util.Arrays;
 
 import org.junit.Test;
 
+import factory_method.device.Device;
 import iterator.list.MyList;
-import template_method.device.Device;
 import vo.Phone;
 import vo.TV;
 

@@ -1,7 +1,7 @@
-package template_method.device;
+package factory_method.device;
 
 import area.House;
-import template_method.framework.Factory;
+import factory_method.framework.Factory;
 import vo.TV;
 
 public class TVFactory extends Factory {

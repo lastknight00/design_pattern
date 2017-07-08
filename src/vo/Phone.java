@@ -1,6 +1,6 @@
 package vo;
 
-import template_method.device.Device;
+import factory_method.device.Device;
 
 public class Phone extends Device {	
 	public Phone(String model, String serial) {
