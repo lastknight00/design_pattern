@@ -12,12 +12,6 @@ public class PC extends SafePowerOffDevice {
 		super(model, serial, alias);
 	}
 
-
-	@Override
-	public void setAlias(final String alias) {
-		this.alias = alias;
-	}
-
 	@Override
 	public boolean powerOn() {
 		if(powerOn) {
