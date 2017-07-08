@@ -37,7 +37,7 @@ public class Phone extends Device {
 	}
 
 	private void powerOnProcess() {
-		System.out.printf("%s(%s) phone power on", alias, model);
+		System.out.printf("%s(%s) phone power on\n", alias, model);
 	}
 
 	@Override
@@ -52,7 +52,7 @@ public class Phone extends Device {
 	}
 
 	private void powerOffProcess() {
-		System.out.printf("%s(%s) phone power off", alias, model);
+		System.out.printf("%s(%s) phone power off\n", alias, model);
 	}
 
 }
