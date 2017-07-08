@@ -9,12 +9,13 @@ import org.junit.Test;
 import iterator.list.MyList;
 import vo.Device;
 import vo.Phone;
+import vo.TV;
 
 public class IteratorTest {
 	@Test
 	public void test() {
 		MyList<Device> list = new MyList<>();
-		list.addAll(Arrays.asList(new Phone("test1", "S8"), new Phone("test2", "Note7")));
+		list.addAll(Arrays.asList(new Phone("test1", "S8"), new TV("test2", "Note7")));
 		assertEquals(list.get(0).getModel(), "test1");
 		Iterator<Device> iter = list.iterator();
 		int index = 0;

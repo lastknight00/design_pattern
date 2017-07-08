@@ -38,7 +38,7 @@ public class TV extends Device {
 	}
 	
 	private void powerOnProcess() {
-		System.out.printf("%s(%s) TV power on", alias, model);
+		System.out.printf("%s(%s) TV power on\n", alias, model);
 	}
 
 	@Override
@@ -53,7 +53,7 @@ public class TV extends Device {
 	}
 
 	private void powerOffProcess() {
-		System.out.printf("%s(%s) TV power off", alias, model);
+		System.out.printf("%s(%s) TV power off\n", alias, model);
 	}
 
 
