@@ -7,19 +7,30 @@ import visitor.composite.Entity;
 import visitor.composite.Group;
 
 public class ListVisitor implements Visitor {
-
+	private String curRoom = "";
+	private int level = 0;
 	@Override
 	public void visit(Group group) {
-		System.out.println(group);
+		printPadding();
+		System.out.println("In room : " + curRoom + "//" + group);
 		Iterator<Entity> iter = group.iterator();
+		curRoom = group.getAlias();
+		level++;
 		while(iter.hasNext()) {
 			iter.next().accept(this);
 		}
+		level--;
 	}
 
 	@Override
 	public void visit(Device device) {
+		printPadding();
 		System.out.println(device);
 	}
 
+	private void printPadding() {
+		for(int index = 0; index < level; index++) {
+			System.out.print("  ");
+		}
+	}
 }
